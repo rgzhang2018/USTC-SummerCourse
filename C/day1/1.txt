@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	long num; 
+	int d,h,m,s;
+	scanf("%ld",&num);
+	s = num % 60;
+	num /= 60;
+	m = num % 60;
+	num /= 60;
+	h = num%24;
+	d = num/24;
+	printf("days:%d hours:%d minutes:%d sec:%d",d,h,m,s);
+	return 0;
+}
