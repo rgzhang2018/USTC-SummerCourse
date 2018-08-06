@@ -54,7 +54,7 @@ void creatHfTree(node *hfTree, int * weight) {
 		hfTree[m].parent = SIZE + i;
 		hfTree[n].parent = SIZE + i;
 		hfTree[i + SIZE].weight = mwet + nwet;
-		//构造过程的规律：从最后一个元素开始，进行层次遍历，可以较为方便的得到内容
+		//核心步骤：从该结构体数组最后一个元素开始，进行层次遍历，可以较为方便的得到内容
 	}
 }
 
