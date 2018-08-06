@@ -3,7 +3,7 @@
 //构建Hash表，H(key)=key%P ，其中P=11.用两种方法实现
 
 #define P 11
-#define LONG 13//LONG是指线性哈希表的实际长度，一般是取大于P的最小素数
+#define LONG 13//LONG是指线性哈希表的实际长度，一般是取大于P的最小素数d
 
 
 typedef struct HList
