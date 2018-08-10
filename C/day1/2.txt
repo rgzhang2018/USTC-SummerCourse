@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	char ch;
+	printf("请输入字符:\n");
+	scanf("%c",&ch);
+	printf("加密后的结果是:\n");
+	ch=0x7a-ch+0x61;
+	printf("%c",ch);
+}
