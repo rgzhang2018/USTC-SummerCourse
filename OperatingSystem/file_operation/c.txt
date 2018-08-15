@@ -1,0 +1,7 @@
+index1 = 45
+index2 = 36
+index3 = 231
+index4 = 43
+index5 = 100
+index6 = 123
+index7 = 51
