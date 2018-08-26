@@ -69,7 +69,7 @@ SORTSTART:
 	MOV AX,BX
 	SHR AX,1		;内容/2,得到数字个数
     MOV CX,AX        ;外层循环AX趟
-	; DEC CX 			;初始化次数n为总数AX-1,因为需要内循环循环执行n-1次，不然会在第一次循环的时候，将最后一个数和数组以外的内容比较并交换,使得丢失数据
+
 ;这里是外层循环
 FORI:  
 	PUSH CX          ;保存外层循环次数
@@ -95,7 +95,6 @@ NEXTNUM:
 
 ;这里是最后的显示
 OUT_ALL:
-	;为了保证最后一个数字的正确录入，要求手动输入最后一个数字之后，先' '后'回车'
 	MOV DL,13	;回车 结尾
 	MOV AH,2
 	INT 21H
@@ -130,9 +129,7 @@ BYTE1:
 	CMP CH,0
 	JNZ BYTE1		;内层循环
 	JMP SHOW
-	; MOV AH,9	
-	; MOV DX,OFFSET BUFFER
-	; INT 21H
+
 
 
 EXIT:
